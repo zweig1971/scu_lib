@@ -129,20 +129,20 @@ private :
 	DWORD milbus_write_cmd(int cmd);
 	DWORD milbus_read(WORD &mildata);
 	
-	DWORD event_fifo_read();
-	DWORD event_timer_read();
-	DWORD event_filter_read();
-	DWORD event_filter_set();
+	DWORD event_fifo_read(); 			// not implemented
+	DWORD event_timer_read();			// not implemented
+	DWORD event_filter_read();			// not implemented
+	DWORD event_filter_set();			// not implemented
 	
-	DWORD irq_mask_read();
-	DWORD irq_mask_write();
+	DWORD irq_mask_read();				// not implemented
+	DWORD irq_mask_write();				// not implemented
 
-	DWORD irq_enable();
-	DWORD irq_disable();
+	DWORD irq_enable();				// not implemented
+	DWORD irq_disable();				// not implemented
 
-	DWORD pulse1_en_dis(bool onoff);
-	DWORD pulse2_en_dis(bool onoff);
-	DWORD puls_set(WORD lemo_nr, WORD vale);
+	DWORD pulse1_en_dis(bool onoff);		// not implemented
+	DWORD pulse2_en_dis(bool onoff);		// not implemented
+	DWORD puls_set(WORD lemo_nr, WORD vale);	// not implemented
 	
 
 public:
@@ -162,8 +162,9 @@ public:
 	DWORD scu_milbus_ifk_rd (BYTE ifkadress, BYTE ifkfunktioncode, WORD &data, DWORD &errorstatus);
 	DWORD scu_milbus_ifk_wr (BYTE ifkadress, BYTE ifkfunktioncode, WORD data, DWORD &errorstatus);
 	bool scu_milbus_ifk_on (BYTE ifkadress, WORD &returnifkad, DWORD &errorstatus);
-	DWORD scu_milbus_puls1_start(DWORD &errorstatus);
-        DWORD scu_milbus_puls1_stop(DWORD &errorstatus);
-	DWORD scu_milbus_puls2_start(DWORD &errorstatus);
-	DWORD scu_milbus_puls2_stop(DWORD &errorstatus);
+	
+	DWORD scu_milbus_puls1_start(DWORD &errorstatus);	// not implemented
+        DWORD scu_milbus_puls1_stop(DWORD &errorstatus);	// not implemented
+	DWORD scu_milbus_puls2_start(DWORD &errorstatus);	// not implemented
+	DWORD scu_milbus_puls2_stop(DWORD &errorstatus);	// not implemented
 };
